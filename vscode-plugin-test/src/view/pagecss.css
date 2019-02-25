@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+#main{
+    width: 100%;
+    height: 1200px;
+}
+#search{
+    width: 100%;
+    color:rgb(51, 173, 230);
+    background-color: black;
+    height: 50px;
+    outline: none;
+    margin-bottom: 2px;
+    border: 0.5px solid rgb(0, 0, 0);
+    padding-left: 5%;
+}
+
+.block{
+    height: 33%;
+    /*background-color: black;*/
+    border: 1px solid;
+    border-color: black;
+    color:rgb(45, 140, 247);
+    font-size: 15px;
+    margin-bottom: 1px;
+    overflow-y: scroll;
+}
+
+
+#menu0{
+    position: fixed;
+    margin-left: 94.75%;
+    margin-right: 2.75%;
+    margin-top: 33%;
+  }
+  @import url("//unpkg.com/iview/dist/styles/iview.css");
+
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow:visible;
+  }
+  
+  .container {
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+}
+
+.parent {
+    width: 100%;
+    height: 42px;
+    position: relative;
+}
+
+.parent>input:first-of-type {
+    /*输入框高度设置为40px, border占据2px，总高度为42px*/
+    width: 95%;
+    height: 40px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.parent>input:first-of-type:focus {
+    border: 1px solid #317ef3;
+    padding-left: 10px;
+}
+
+.parent>input:last-of-type {
+    /*button按钮border并不占据外围大小，设置高度42px*/
+    width: 5%;
+    height: 40px; 
+    position: absolute;
+    background: #317ef3;
+    border: 1px solid #317ef3;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}

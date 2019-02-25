@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../lib/right.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../lib/right click menu/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/iview.css">
+    <link rel="stylesheet" href="pagecss.css" >
+    <script src="../../lib/right click menu/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../lib/right click menu/js/mouseRight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../../lib/vue.min.js"></script>
+    <script type="text/javascript" src="../../lib/iview.min.js"></script>
+    <script type="text/javascript" src="csrecommendation.js"></script>
+</head>
+<body>
+    <div id="main">
+      <div id="menu0"  >
+        <Button-group vertical size="large">
+          <i-button style="height: 2cm"  type="info" long="true"  id="btnPrev" value="上一页" >
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jiantoushang"></use>
+            </svg>
+          </i-button>
+          <i-button style="height: 2cm"  type="info" long="true" id="btnNext" value="下一页" >
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jiantouxia"></use>
+            </svg>
+          </i-button>
+          <i-button style="height: 2cm"  type="info" long="true"  onclick="searchcontainer()">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-sousuo"></use>
+            </svg>
+          </i-button>
+        </Button-group>
+      </div>
+
+        <div class="container" style="display:none" id="searchcontainer">
+          <form action="" class="parent"  >
+              <input type="text" id="context">
+              <input type="button" value="搜索" onclick="search()">
+          </form>
+        </div>
+
+        <ul  style="height:100%">
+                <li class="block">代码区域1</li>
+                <li class="block">代码区域2</li>
+                <li class="block">代码区域3</li>
+                <li class="block">代码区域4</li>
+                <li class="block">代码区域5</li>
+                <li class="block">代码区域6</li>
+                <li class="block">代码区域7</li>
+                <li class="block">代码区域8</li>
+                <li class="block">代码区域9</li>
+                <li class="block">代码区域10</li>
+                <li class="block">代码区域11</li>
+                <li class="block">代码区域12</li>
+                <li class="block">代码区域13</li>
+                <li class="block">代码区域14</li>
+                <li class="block">代码区域15</li>
+                <li class="block">代码区域16</li>
+                <li class="block">代码区域17</li>
+                <li class="block">代码区域18</li>
+                <li class="block">代码区域19</li>
+                <li class="block">代码区域20</li>
+        </ul>
+
+
+
+    <script type="text/javascript">
+        var Main = {};
+        var Component = Vue.extend(Main);
+        new Component().$mount('#menu0');
+    </script>
+    <script>
+        $('#value').value=undefined;
+        window.onload=search();
+    </script>
+    <script src="../rightmenu.js"></script>
+
+</body>
+</html>
